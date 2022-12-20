@@ -213,6 +213,7 @@ a {
 		background-repeat: no-repeat;
 		background-size:auto;
 		background-attachment:local;
+		background-color: black;
 	}
 
 }
