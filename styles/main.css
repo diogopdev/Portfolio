@@ -199,6 +199,21 @@ a {
 	}
 }
 
+/*---------------- Separator --------------- */
+
+.separator {
+	background-image: url(../images/back-img.jpg);
+	height: 5px;
+	position: relative;
+	opacity: 0.85;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	margin-bottom: 50px;
+	box-shadow: 2px 2px 10px black;
+}
+
 /* Checks if is IOS */
 @supports (-webkit-touch-callout: none){
 	.my-bio {
@@ -219,21 +234,6 @@ a {
 		background-image: none;
 	}
 
-}
-
-/*---------------- Separator --------------- */
-
-.separator {
-	background-image: url(../images/back-img.jpg);
-	height: 5px;
-	position: relative;
-	opacity: 0.85;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	background-attachment: fixed;
-	margin-bottom: 50px;
-	box-shadow: 2px 2px 10px black;
 }
 
 
