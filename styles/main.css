@@ -1,0 +1,218 @@
+@font-face {
+	font-family: 'Segoe';
+	src: url(../fonts/Segoe\ UI.ttf);
+}
+@font-face {
+	font-family: 'Segoe';
+	src: url(../fonts/Segoe\ UI\ Bold.ttf);
+	font-weight: bold;
+}
+@font-face {
+	font-family: 'TaliRaphia';
+	src: url(../fonts/TaliRaphia.otf);
+}
+
+li {
+	line-height: 2;
+}
+
+body {
+	font-family: "Segoe", Arial, sans-serif;
+	padding: 0;
+	margin: 0;
+	background-color: rgb(33, 32, 32);
+}
+
+footer {
+	position: absolute;
+	display: block;
+	height: 200px;
+	background-color: white;
+	bottom:0;
+}
+
+/* ---------- Header ---------- */
+
+header {
+	height: 100px;
+	color: #5DA1E5;
+	text-shadow: 2px 2px 10px black;
+	display: flex;
+}
+
+a {
+	text-decoration: none;
+	color: #5DA1E5;;
+}
+
+.socials-header {
+	flex: 1;
+	display: flex;	
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.socials {
+	font-size: 30px;
+	line-height: 0%;
+	margin-right: 40px;
+}
+
+
+/* Create pulse animation:
+*/
+@keyframes pulse {
+	from {
+	  transform: scale(1);
+	}
+	50% {
+	  transform: scale(0.9);
+	}
+  }
+
+.socials:hover {
+	cursor: pointer;
+	animation: pulse 0.9s ease-in-out;
+}
+
+/* ---------- First Row ----------- */
+
+.first-row {
+	display: flex;
+	justify-content: center;
+}
+
+.my-name {
+	display: flex;
+	width: 400px;
+	height: 100px;
+	margin-bottom: 50px;
+	justify-content: center;
+}	
+
+.my-name h1 {
+	font-family: 'TaliRaphia';
+	font-size: 65px;
+	color: white;
+	text-shadow: 2px 2px 10px black;
+	margin-bottom: 70px;
+	/* text-shadow: 3px 4px 1px black; */
+	align-self: center;
+}
+
+/* ------------ Second Row -------------- */
+
+.second-row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 50px;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.me {
+	display: flex;
+	flex:1;
+	align-items: center;
+	justify-content: center;
+	margin: 0px 10px 50px 0px;
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+.me img {
+	border-radius: 20px;
+	box-shadow: 2px 2px 10px black;
+	width: 300px;
+	
+}
+
+
+.my-bio {
+	display: flex;
+	flex-wrap: wrap;
+	flex:2;
+	
+
+	background-image: url(../images/back-img.jpg);
+	opacity: 0.85;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+
+	box-shadow: 2px 2px 10px black;
+	border-radius: 20px;
+	margin: 0px 0px 50px 0px;
+	color: white;
+	line-height: 25px;
+	text-shadow: 2px 2px 1px black;
+}
+
+.my-bio-bg {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 20px;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.283);
+	border-radius: 20px;
+}
+
+@media only screen and (max-width: 835px) {
+	.my-bio{
+		flex: 0 0 100%;
+	}
+} 
+
+@media only screen and (min-width: 375px) and (max-width: 520px) {
+
+	.my-name h1{
+		font-size: 50px;
+	}
+	.me img {
+		width: 200px;
+	}
+	.my-bio{
+		border: 1px solid green;
+		margin:auto;
+	}
+	.my-bio-bg {
+		font-size: 15px;
+	}
+	
+} 
+
+@media only screen and (max-width: 320px) {
+
+	.my-name {
+		margin-bottom: -10px;
+	}
+	.my-name h1{
+		font-size: 40px;
+	}
+	.me img {
+		width: 100px;
+	}
+	.my-bio-bg {
+		font-size: 11px;
+	}
+}
+
+/*---------------- Separator --------------- */
+
+.separator {
+	background-image: url(../images/back-img.jpg);
+	height: 5px;
+	position: relative;
+	opacity: 0.85;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	margin-bottom: 50px;
+	box-shadow: 2px 2px 10px black;
+}
+
+
