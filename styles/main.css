@@ -199,23 +199,23 @@ a {
 	}
 }
 
-/* Check if is IOS */
+/* Checks if is IOS */
 @supports (-webkit-touch-callout: none){
 	.my-bio {
 		position: static;
-		background-repeat: no-repeat;
+		/* background-repeat: no-repeat;
 		background-size:auto;
-		background-attachment:local;
-		background-color: black;
+		background-attachment:local; */
+		background-color: #848383;
 		background-image: none;
 	}
 
 	.separator {
 		position: static;
-		background-repeat: no-repeat;
+		/* background-repeat: no-repeat;
 		background-size:auto;
-		background-attachment:local;
-		background-color: black;
+		background-attachment:local; */
+		background-color: #848383;
 		background-image: none;
 	}
 
